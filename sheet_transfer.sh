@@ -12,7 +12,7 @@ download_file() {
 
 # ファイルをサーバにアップロードする関数
 upload_file() {
-    local file="$1"
+    local file="$1" 
     echo "Uploading $file to $SERVER/$DIRECTORY..."
     scp "$file" "$SERVER":"$DIRECTORY"
 }
